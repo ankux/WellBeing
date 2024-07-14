@@ -5,7 +5,7 @@ function HeroSection() {
   return (
     <div className="flex font-poppins flex-col-reverse md:flex-row items-center justify-between p-6 md:p-12 bg-gray-100">
       <div className="md:w-2/3 text-center md:text-left p-6">
-        <h1 className="md:text-7xl sm:text-blue-600  bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-gradient text-4xl font-bold mb-4"> <span className='max-sm:text-lg  font-normal'> We care about your </span>  Mental Health </h1>
+        <h1 className="md:text-7xl sm:text-blue-600  bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-gradient text-4xl font-bold mb-4"> <span className='max-sm:text-lg  font-normal'> We care about your </span> <br />  Mental Health </h1>
         <p className="text-lg text-gray-600 max-w-[75%] max-sm:hidden mb-6">
           Discover a range of wellness services designed to help you achieve your health goals. Join our community today and start your journey towards better well-being.
         </p>

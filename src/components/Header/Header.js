@@ -3,9 +3,10 @@ import { FiMenu } from "react-icons/fi";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { IoCloseOutline } from "react-icons/io5";
 import { FaRegUserCircle } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 import clsx from "clsx";
 
-function Navbar() {
+function Header() {
   const [isSideMenuOpen, setMenu] = useState(false);
 
   const navlinks = [
@@ -29,7 +30,7 @@ function Navbar() {
 
   return (
     <main>
-      <nav className="header font-poppins flex justify-between sticky top-0 px-8 items-center py-6">
+      <nav className="header font-poppins flex justify-between sticky top-0 px-8 md:px-16 items-center py-6">
         <div className="flex items-center gap-8">
           <section className="flex items-center gap-4">
             {/* menu */}
@@ -38,18 +39,18 @@ function Navbar() {
               className="text-3xl cursor-pointer lg:hidden"
             />
             {/* logo */}
-            <a href="/" className="text-4xl font-mono">
+            <Link to="/" className="text-4xl font-mono">
               <img src="/assets/logo_transparent.png" className="w-32 pointer-events-none" alt="" />
-            </a>
+            </Link>
           </section>
           {navlinks.map((link, index) => (
-            <a
+            <Link
               key={index}
-              href={link.link}
+              to={link.link}
               className="hidden lg:block text-gray-500 hover:text-black"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </div>
 
@@ -67,9 +68,9 @@ function Navbar() {
             />
 
             {navlinks.map((link, index) => (
-              <a key={index} href={link.link} className="text-lg text-left">
+              <Link key={index} to={link.link} className="text-lg text-left">
                 {link.label}
-              </a>
+              </Link>
             ))}
           </section>
         </div>
@@ -77,8 +78,10 @@ function Navbar() {
         {/* last section */}
         <section className="flex items-center gap-4">
           {/* cart icon */}
-          <AiOutlineShoppingCart className="text-3xl" />
-          <FaRegUserCircle className="text-3xl" />
+          <AiOutlineShoppingCart className="text-3xl cursor-pointer" />
+          <Link to="/login">
+            <FaRegUserCircle className="text-3xl cursor-pointer" />
+          </Link>
           {/* avatar img */}
         </section>
       </nav>
@@ -87,4 +90,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Header;

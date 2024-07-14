@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -15,10 +16,10 @@ function Footer() {
         
         {/* Navigation Links */}
         <div className="flex justify-center flex-col md:flex-row items-center md:w-1/3">
-          <a href="/" className="text-gray-400 hover:text-gray-100 mx-2">Home</a>
-          <a href="/" className="text-gray-400 hover:text-gray-100 mx-2">Services</a>
-          <a href="/" className="text-gray-400 hover:text-gray-100 mx-2">Contact</a>
-          <a href="/" className="text-gray-400 hover:text-gray-100 mx-2">About</a>
+          <Link to="/" className="text-gray-400 hover:text-gray-100 mx-2">Home</Link>
+          <Link to="/services" className="text-gray-400 hover:text-gray-100 mx-2">Services</Link>
+          <Link to="/contact" className="text-gray-400 hover:text-gray-100 mx-2">Contact</Link>
+          <Link to="/about" className="text-gray-400 hover:text-gray-100 mx-2">About</Link>
         </div>
 
         {/* Contact and Social Links */}

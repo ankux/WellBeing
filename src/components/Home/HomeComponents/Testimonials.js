@@ -20,8 +20,8 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <div className="flex flex-col items-center justify-center font-poppins min-h-screen bg-gray-100 p-4 md:py-14">
-      <h1 className="text-4xl md:text-6xl font-bold mb-8">Customer Said about <i className='font-normal'> <br className='max-md:hidden' /> WellBeing </i></h1>
+    <div className="flex flex-col items-center justify-center font-poppins py-12  bg-gray-100 p-4 md:py-14">
+      <h1 className="text-4xl md:text-6xl font-bold text-center mb-8">Customer Said about <i className='font-normal'> <br className='max-md:hidden' /> WellBeing </i></h1>
       <div className="space-y-3 max-w-2xl">
         {testimonials.map((testimonial, index) => (
           <div key={index} className="flex items-center p-4 bg-white rounded-lg shadow-md">

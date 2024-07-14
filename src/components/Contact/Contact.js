@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ContactUs = () => {
+const Contact = () => {
   return (
     <div className="flex font-poppins flex-col md:flex-row gap-10 items-center justify-evenly min-h-auto p-4 py-8 md:px-52">
       <div className="w-full md:w-1/2 p-4">
@@ -49,6 +49,6 @@ const ContactUs = () => {
   );
 };
 
-export default ContactUs;
+export default Contact;
 
 
