@@ -31,7 +31,7 @@ const Faq = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center mt-6 p-4">
+    <div className="flex font-poppins flex-col items-center justify-center mt-6 p-4">
       <h1 className="text-4xl md:text-6xl font-bold mb-8">Frequently Asked Questions</h1>
       <div className="w-full max-w-3xl">
         {faqs.map((faq, index) => (
